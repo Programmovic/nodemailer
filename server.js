@@ -93,7 +93,7 @@ app.post('/sendEmail', async (req, res) => {
 
     // Define email data with HTML content for the response email to the sender
     const responseEmailOptions = {
-      from: process.env.EMAIL, // Your email address
+      from: "contact@b-circles.co", // Your email address
       to: email, // Sender's email address
       subject: "Thank You for Contacting Us",
       // Use HTML content for the email body
