@@ -86,8 +86,8 @@ app.post('/sendEmail', async (req, res) => {
       port: 465, // Use the SMTP port provided
       secure: true, // Use secure connection
       auth: {
-        user: process.env.EMAIL, // Your email address
-        pass: process.env.PASSWORD, // Your email password
+        user: "contact@b-circles.co", // Your email address
+        pass: "A_123456", // Your email password
       },
     });
 
