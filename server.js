@@ -1,10 +1,13 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
+
+// Enable CORS for all routes
+app.use(cors());
 // Parse JSON and form dataa
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
